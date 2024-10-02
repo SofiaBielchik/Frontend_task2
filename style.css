@@ -1,0 +1,79 @@
+/* Загальні стилі для обох світлофорів */
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.traffic-light {
+    width: 100px;
+    height: 300px;
+    background-color: rgb(156, 150, 150);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Кола (ліхтарі) світлофора */
+.light {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+/* Вогні світлофора */
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+/* Світлофор за допомогою position */
+.position {
+    position: relative;
+}
+
+.position .light {
+    position: absolute;
+}
+
+.position .red {
+    top: 40px;
+}
+
+.position .yellow {
+    top: 140px;
+}
+
+.position .green {
+    top: 240px;
+}
+
+/* Світлофор за допомогою transform */
+.transform {
+    position: relative;
+}
+
+.transform .red {
+    transform: translateY(20px);
+}
+
+.transform .yellow {
+    transform: translateY(0px);
+}
+
+.transform .green {
+    transform: translateY(-20px);
+}
